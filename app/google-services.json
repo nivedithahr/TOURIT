@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "785356154516",
+    "project_id": "tourit-72078",
+    "storage_bucket": "tourit-72078.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785356154516:android:72b3604e176dc8fa5b3681",
+        "android_client_info": {
+          "package_name": "com.example.tourit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785356154516-4knc9c0cjguqvapkd1h6h97gb71nmodd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjRRYZn06l3q28ZWWEvGdEn9T_aLtSgcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785356154516-4knc9c0cjguqvapkd1h6h97gb71nmodd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
