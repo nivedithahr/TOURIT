@@ -2,13 +2,24 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tourit">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/app_naame"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TourIt">
+        <activity android:name=".Bangkok"></activity>
+        <activity android:name=".Thailand" />
+        <activity android:name=".coorgbookguide" />
+        <activity android:name=".NearbyCoorg" />
+        <activity android:name=".coorg" />
+        <activity android:name=".karnataka" />
+        <activity android:name=".WorldTour" />
+        <activity android:name=".StateTour" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,11 +28,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ResetPassword" />
-        <activity android:name=".Login">
-
-        </activity>
+        <activity android:name=".Login" />
         <activity android:name=".Register" />
-        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

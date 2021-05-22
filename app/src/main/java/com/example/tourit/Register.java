@@ -125,6 +125,7 @@ public class Register extends AppCompatActivity {
                                     if(task.isSuccessful()){
                                         Toast.makeText(Register.this, "User has been successfully Registered", Toast.LENGTH_SHORT).show();
                                         registerProgressBar.setVisibility(View.GONE);
+                                        startActivity(new Intent(Register.this,Login.class));
                                     }
                                     else {
                                         Toast.makeText(Register.this, "Registration Failed! Try again!!", Toast.LENGTH_SHORT).show();
@@ -134,7 +135,8 @@ public class Register extends AppCompatActivity {
                             });
                         }
                         else {
-                            Toast.makeText(Register.this, "Registration Failed! Try again!!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Register.this, "User already registered", Toast.LENGTH_SHORT).show();
+                            registerProgressBar.setVisibility(View.GONE);
                         }
                     }
                 });

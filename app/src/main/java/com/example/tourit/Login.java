@@ -106,11 +106,12 @@ public class Login extends AppCompatActivity {
                 if (task.isSuccessful()){
                     FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
                     if (firebaseUser.isEmailVerified()){
-                        startActivity(new Intent(Login.this, MainActivity.class));
+                        startActivity(new Intent(Login.this,MainActivity.class));
                     }
                     else {
                         firebaseUser.sendEmailVerification();
-                        Toast.makeText(Login.this, "Email is not verified! Check your mail for verification link", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Login.this, "Email is not verified! Check your mail for verification link and Try again", Toast.LENGTH_SHORT).show();
+                        loginProgressBar.setVisibility(View.GONE);
                     }
                 }
                 else {
