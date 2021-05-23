@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class Thailand extends AppCompatActivity {
 
-    private Button bangkokDetails1;
+    private Button bangkokDetails1,bangkokDetails2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,13 +17,22 @@ public class Thailand extends AppCompatActivity {
         setContentView(R.layout.activity_thailand);
 
         bangkokDetails1 = findViewById(R.id.bangkokDetails1);
+        bangkokDetails2 = findViewById(R.id.bangkokDetails2);
 
 
 
         bangkokDetails1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 startActivity(new Intent(Thailand.this,Bangkok.class));
+            }
+        });
+        bangkokDetails2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(Thailand.this,ErawanPark.class));
             }
         });
     }

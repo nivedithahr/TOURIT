@@ -34,6 +34,8 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        getSupportActionBar().hide();
+
         userAuth = FirebaseAuth.getInstance();
 
         userEmailId = findViewById(R.id.resetEmail);

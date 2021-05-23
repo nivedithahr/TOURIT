@@ -2,7 +2,9 @@ package com.example.tourit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -15,6 +17,7 @@ import java.util.List;
 public class Bangkok extends AppCompatActivity {
 
     private TextView Bh1,Bb1,Bh2,Bb2;
+    private Button nearBangkok,bookBangkok;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,5 +47,21 @@ public class Bangkok extends AppCompatActivity {
                 "•\tAurum The River Place(0.8 kilometer to Grand Palace)\n" +
                 "•\tBaan Wanglang Riverside(0.7 kilometer to Grand Palace)\n" +
                 "•\tSiri Heritage Bangkok Hotel(0.6 kilometer to Grand Palace)\n");
+
+        nearBangkok = findViewById(R.id.nearBangkok);
+        bookBangkok = findViewById(R.id.bookBangkok);
+
+        nearBangkok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Bangkok.this,NearbyBangkok.class));
+            }
+        });
+        bookBangkok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Bangkok.this,BookBangkok.class));
+            }
+        });
     }
 }

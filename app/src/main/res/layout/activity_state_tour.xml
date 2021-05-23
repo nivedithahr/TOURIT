@@ -14,6 +14,9 @@
         android:orientation="vertical"
         tools:context=".WorldTour">
 
+        <include
+            layout="@layout/toolbar"/>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/karnataka"
             android:layout_width="400dp"
