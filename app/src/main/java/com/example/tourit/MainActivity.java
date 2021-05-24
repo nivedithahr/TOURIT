@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView nameView,emailView,View;
 
-    private FirebaseAuth userAuth;
+
     private FirebaseUser currentUser;
     private DatabaseReference reference;
     private String userID;
@@ -52,7 +52,26 @@ public class MainActivity extends AppCompatActivity {
 
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("Users");
-//        userID = currentUser.getUid();
+        userID = currentUser.getUid();
+        reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                UserObject userObject = snapshot.getValue(UserObject.class);
+
+                if (userObject != null){
+                    String name = userObject.userName;
+                    String email = userObject.userEmail;
+
+                    nameView.setText(name);
+                    emailView.setText(email);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 
         nameView = findViewById(R.id.nameView);
         emailView = findViewById(R.id.emailView);
@@ -73,24 +92,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                UserObject userProfile = snapshot.getValue(UserObject.class);
-//                if (userProfile != null){
-//                    String userName = userProfile.getUserName();
-//                    String userEmail = userProfile.getUserEmail();
-//
-//                    nameView.setText(userName);
-//                    emailView.setText(userEmail);
-//                }
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//
-//            }
-//        });
 
 
         worldTour.setOnClickListener(new View.OnClickListener() {
