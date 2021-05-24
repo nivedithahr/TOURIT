@@ -52,26 +52,26 @@ public class MainActivity extends AppCompatActivity {
 
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("Users");
-        userID = currentUser.getUid();
-        reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                UserObject userObject = snapshot.getValue(UserObject.class);
-
-                if (userObject != null){
-                    String name = userObject.userName;
-                    String email = userObject.userEmail;
-
-                    nameView.setText(name);
-                    emailView.setText(email);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
+//        userID = currentUser.getUid();
+//        reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                UserObject userObject = snapshot.getValue(UserObject.class);
+//
+//                if (userObject != null){
+//                    String name = userObject.userName;
+//                    String email = userObject.userEmail;
+//
+//                    nameView.setText(name);
+//                    emailView.setText(email);
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
 
         nameView = findViewById(R.id.nameView);
         emailView = findViewById(R.id.emailView);

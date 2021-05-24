@@ -35,7 +35,7 @@
                 android:layout_width="290dp"
                 android:layout_height="210dp"
                 android:layout_gravity="center_horizontal"
-                app:srcCompat="@drawable/coorg" />
+                app:srcCompat="@drawable/murdershwara" />
 
             <Button
                 android:id="@+id/coorgDetails"
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="75dp"
-                android:text="COORG"
+                android:text="Murdeshwar"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
@@ -79,7 +79,7 @@
                 android:layout_width="290dp"
                 android:layout_height="210dp"
                 android:layout_gravity="center_horizontal"
-                app:srcCompat="@drawable/bandipurmain" />
+                app:srcCompat="@drawable/sea1" />
 
             <Button
                 android:id="@+id/coorgDetails1"
@@ -96,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="75dp"
-                android:text="Bandipur National Park"
+                android:text="Om Beach, Gokarna"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
@@ -122,7 +122,7 @@
                 android:layout_width="290dp"
                 android:layout_height="210dp"
                 android:layout_gravity="center_horizontal"
-                app:srcCompat="@drawable/hampimain" />
+                app:srcCompat="@drawable/sea2" />
 
             <Button
                 android:id="@+id/coorgDetails2"
@@ -138,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="75dp"
-                android:text="Hampi"
+                android:text="Panambur Beach, Mangalore"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
@@ -180,7 +180,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="75dp"
-                android:text="Shivanasamudra Falls"
+                android:text="Gokarna Beach"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
