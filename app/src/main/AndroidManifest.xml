@@ -11,7 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TourIt">
-        <activity android:name=".Bandipur"></activity>
+        <activity android:name=".Sea"></activity>
+        <activity android:name=".Funriding" />
+        <activity android:name=".NearbyRidingRaft" />
+        <activity android:name=".RidingRafting" />
+        <activity android:name=".advantureKa" />
+        <activity android:name=".afterbookMurbeshwar" />
+        <activity android:name=".bookMudeshwar" />
+        <activity android:name=".nearbyMudeshwar" />
+        <activity android:name=".Mudeshwar" />
+        <activity android:name=".Bandipur" />
         <activity android:name=".ShoeExcursion" />
         <activity android:name=".Andaman" />
         <activity android:name=".AfterRegisterErawanPark" />

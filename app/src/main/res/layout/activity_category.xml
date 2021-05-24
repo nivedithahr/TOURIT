@@ -41,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView18" />
 
     <Button
-        android:id="@+id/Ksea"
+        android:id="@+id/sea"
         android:layout_width="150dp"
         android:layout_height="80dp"
         android:layout_marginTop="16dp"
@@ -81,11 +81,11 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Ksea"
+        app:layout_constraintTop_toBottomOf="@+id/sea"
         app:srcCompat="@drawable/funriding" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/funriding"
         android:layout_width="150dp"
         android:layout_height="80dp"
         android:layout_marginTop="24dp"
